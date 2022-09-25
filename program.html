@@ -1,0 +1,215 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="salt-site.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+   function lightning(cls, arr) {
+       var rows = document.getElementsByClassName(cls);
+       for (var i = 0; i < rows.length; i++) {
+	         rows[i].classList.toggle("hidden");
+       }
+       document.getElementById(arr).classList.toggle("collapsed");
+   }
+  </script>
+</head>
+<html>
+  <body>
+    <div class="container" >
+      <div class="row" >
+        <div id="logo-div" >
+          <a href="index.html" id="logo-link"><img src="YOUR LOGO" id="logo"/></a>
+          <br>
+          <div id="location-div" >
+            <span id="location" >
+              Yale University
+            </span>
+            <br>
+            <span id="date" class="alert">
+              May 12 &ndash; 14, 2023
+            </span>
+          </div>
+        </div>
+        <div class="row" >
+          <div id="nav" class="three columns" >
+            <ul>
+              <li>
+                <a href="call.html">Call for Abstracts</a>
+              </li>
+              <li>
+                <a href="registration.html">Registration</a>
+              </li>
+              <li>
+                <a href="local.html">Local information</a>
+              </li>
+              <li>
+                <a href="program.html">Program</a>
+              </li>
+            </ul>
+          </div>
+          <div id="content" class="nine columns" >
+            <p>
+              <b>NB:</b> This schedule is preliminary and subject to change.
+            </p>
+            <h2 id="friday">Friday, May 12</h2>
+            <table class="program">
+              <tbody>
+                <tr class="break">
+                  <td class="time">8:00-8:50</td>
+                  <td class="title">Breakfast & Registration</td>
+                  <td></td>
+                </tr>
+                <tr class="admin">
+                  <td class="time">8:50-9:00</td>
+                  <td class="title">Welcome</td>
+                  <td></td>
+                </tr>
+                <tr class="talkChairinfo"><td colspan="3">Session 1</td></tr>
+                <tr class="talk">
+                  <td class="time">9:00-9:40</td>
+                  <td class="title"><a href="abstracts/abstract1.pdf">A Talk</a></td>
+                  <td class="authors">Somebody</td>
+                </tr>
+                <tr class="talk">
+                  <td class="time">9:40--10:20</td>
+                  <td class="title"><a href="abstracts/abstract2.pdf">Another Talk</a></td>
+                  <td class="authors">Somebody and Somebody else</td>
+                </tr>
+                <tr class="break">
+                  <td class="time">10:20-10:35</td>
+                  <td class="title">Break</td>
+                  <td></td>
+                </tr>
+                <tr class="talkChairinfo"><td colspan="3">Session 2</td></tr>
+                <tr class="talk">
+                  <td class="time">10:35-11:15</td>
+                  <td class="title"><a href="abstracts/abstract3.pdf">More Talk</a>
+                    <span class="materials"><a href="presentation-materials-public/handout1.pdf">[handout]</a></span></td>
+                  <td class="authors">Authors</td>
+                </tr>
+                <tr class="talk">
+                  <td class="time">11:15-11:55</td>
+                  <td class="title"><a href="abstracts/abstract4.pdf">And Another</a></td>
+                  <td class="authors">Person</td>
+                </tr>
+                <tr class="lunch">
+                  <td class="time">11:55-1:30</td>
+                  <td class="title">Lunch + Pop-up Mentoring</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 id="saturday">Saturday, May 13</h2>
+            <table class="program">
+              <tbody>
+                <tr class="break">
+                  <td class="time">8:30-9:00</td>
+                  <td class="title">Breakfast & Registration</td>
+                  <td></td>
+                </tr>
+                <tr class="invitedChairinfo"><td colspan="3">Invited Talk</td></tr>
+                <tr class="invited">
+                  <td class="time">9:00-10:00</td>
+                  <td class="title">Big Talk
+                    <span class="materials"><a href="presentation-materials-public/handout.pdf">[handout]</a></span></td>
+                  <td class="authors">Invited Talker</td>
+                </tr>
+                <tr class="break">
+                  <td class="time">10:00-10:15</td>
+                  <td class="title">Break</td>
+                  <td></td>
+                </tr>
+                <tr class="posterChairinfo"><td colspan="3">Poster Session</td></tr>
+                <tr class="postertalk">
+                  <td class="time">10:15-11:00</td>
+                  <td class="title" colspan="2">
+                    <span id="lightOnePosterArr" class="collapsed"></span>
+                    <a id="lightOnePosterSwitch" href="javascript:void(0)" onclick="lightning('posterInfoLightOne', 'lightOnePosterArr')">Lightning Round 1</a>
+                  </td>
+                </tr>
+                <tr class="posterInfoLightOne hidden">
+                  <td class="time">&nbsp;</td>
+                  <td class="title"><a href="abstracts/abstract5.pdf">A Poster</a></td>
+                  <td class="authors">Poster Presenters</td>
+                </tr>
+                <tr class="posterInfoLightOne hidden">
+                  <td class="time">&nbsp;</td>
+                  <td class="title"><a href="abstracts/abstract6.pdf">More Poster</a></td>
+                  <td class="authors">More Poster Presenters</td>
+                </tr>
+                <tr class="break">
+                  <td class="time">11:00-11:15</td>
+                  <td class="title">Break</td>
+                  <td></td>
+                </tr>
+                <tr class="talkChairinfo"><td colspan="3">Session 1</td></tr>
+                <tr class="talk">
+                  <td class="time">11:15-11:55</td>
+                  <td class="title"><a href="abstracts/abstract7.pdf">Talk</a></td>
+                  <td class="authors">Talkers</td>
+                </tr>
+                <tr class="posterChairinfo"><td colspan="3">Poster Session</td></tr>
+                <tr class="postertalk">
+                  <td class="time">3:15-4:00</td>
+                  <td class="title" colspan="2">
+                    <span id="lightTwoPosterArr" class="collapsed"></span>
+                    <a id="lightTwoPosterSwitch" href="javascript:void(0)" onclick="lightning('posterInfoLightTwo', 'lightTwoPosterArr')">Lightning Round 2</a>
+                  </td>
+                </tr>
+                <tr class="posterInfoLightTwo hidden">
+                  <td class="time">&nbsp;</td>
+                  <td class="title"><a href="abstracts/abstract8.pdf">Another Poster</a></td>
+                  <td class="authors">Presenter</td>
+                </tr>
+                <tr class="posterInfoLightTwo hidden">
+                  <td class="time">&nbsp;</td>
+                  <td class="title"><a href="abstracts/abstract9.pdf">And Another</a></td>
+                  <td class="authors">Presenter</td>
+                </tr>
+                <tr class="break">
+                  <td class="time">4:00-4:30</td>
+                  <td class="title">Break + Happy Hour</td>
+                  <td></td>
+                </tr>
+                <tr class="poster">
+                  <td class="time">4:30-6:30</td>
+                  <td class="title" colspan="2">Posters on display</td>
+                </tr>
+                <tr class="break">
+                  <td class="time">7:00-10:00</td>
+                  <td class="title" colspan="2">Dinner at ...
+                    (<a style="font-weight: 400; color: #3284bf; text-decoration: none; border-bottom: 1px solid"
+                       href="">map here</a>)
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- <hr> -->
+            <h2 id="sunday">Sunday, May 14</h2>
+            <table class="program">
+              <tbody>
+                <!-- <tr class="break"> -->
+                <!-- <td class="time">8:30-9:00</td> -->
+                <!-- <td class="title">Breakfast</td> -->
+                <!-- <td></td> -->
+                <!-- </tr> -->
+                <tr class="talkChairinfo"><td colspan="3">Session 1</td></tr>
+                <tr class="talk">
+                  <td class="time">9:00-9:40</td>
+                  <td class="title"><a href="abstracts/abstract10.pdf">More of the same</a>
+                    <span class="materials"><a href="presentation-materials-public/handout.pdf">[handout]</a></span></td>
+                  <td class="authors">Author</td>
+                </tr>
+              </tbody>
+            </table>
+            <h4 id="alts">Poster Alternates</h4>
+            <p>
+              Poster Alt, <i>Title</i>
+            </p>
+            <p>
+              Poster Alt, <i>Title</i>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
