@@ -141,14 +141,14 @@ ul[list-title] li {
 #speakers li:nth-child(even):before {
     margin-right: 0.5em;
     /* content: "\1F34E"; */
-    content: "ICON"
+    content: "\1F333"
 
 }
 
 #speakers li:nth-child(odd):before {
     margin-right: 0.5em;
     /* content: "\1F34E"; */
-    content: "ICON";
+    content: "\1F333";
 }
 
 /* Navigation menu
