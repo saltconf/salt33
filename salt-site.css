@@ -176,7 +176,7 @@ ul[list-title] li {
 #nav ul ul {
 	list-style-type: none;
 	margin: .5em;
-	padding: 1pt;
+	padding-left: .5em;
 }
 
 #nav a {
