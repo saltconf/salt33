@@ -185,6 +185,9 @@ ul[list-title] li {
 	border-top: .5px solid var(--grid-color);
 }
 
+#nav ul ul > :last-child {
+	border-bottom: none;
+}
 
 #nav a {
     color: black;
