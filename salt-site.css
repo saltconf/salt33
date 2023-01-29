@@ -181,7 +181,8 @@ ul[list-title] li {
 
 
 #nav ul ul > :first-child {
-    border-top: .5px solid var(--grid-color);
+    	padding-top:.3em;
+	border-top: .5px solid var(--grid-color);
 }
 
 
