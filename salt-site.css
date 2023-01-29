@@ -175,7 +175,7 @@ ul[list-title] li {
 
 #nav ul ul {
 	list-style-type: none;
-	margin: .5em;
+	margin: .25em;
 	padding-left: .5em;
 }
 
@@ -185,7 +185,7 @@ ul[list-title] li {
 }
 
 #nav a.current {
-    color: var(--main-color);
+    color: var(--accent-color);
 }
 
 #sponsors {
