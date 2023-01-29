@@ -182,7 +182,7 @@ ul[list-title] li {
 
 #nav ul ul > :first-child {
     	padding-top:.3em;
-	border-top: .5px solid var(--grid-color);
+	border-top: none;
 }
 
 #nav ul ul > :last-child {
