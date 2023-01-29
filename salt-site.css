@@ -179,6 +179,12 @@ ul[list-title] li {
 	padding-left: .5em;
 }
 
+
+#nav ul ul > :first-child {
+    border-top: .5px solid var(--grid-color);
+}
+
+
 #nav a {
     color: black;
     border-bottom: none;
