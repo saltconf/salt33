@@ -4,8 +4,8 @@
  */
 
 :root {
-  --main-color: #00356b;
-  --main-table-color: #00356b85; /* adds some transparency*/
+  --main-color: #b35642;
+  --main-table-color: #b3564230; /* adds some transparency*/
   --accent-color: #528241;
   --accent-table-color: #5282412e; /* adds some transparency*/
   --grid-color: #eae9e6;
