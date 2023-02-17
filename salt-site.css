@@ -4,10 +4,17 @@
  */
 
 :root {
+<<<<<<< Updated upstream
   --main-color: #b35642;
   --main-table-color: #b3564285; /* adds some transparency*/
   --accent-color: #528241;
   --accent-table-color: #5282412e; /* adds some transparency*/
+=======
+  --main-color: #bd5319;
+  --main-table-color: #bd531930; /* adds some transparency*/
+  --accent-color: #5f712d;
+  --accent-table-color: #5f712d30; /* adds some transparency*/
+>>>>>>> Stashed changes
   --grid-color: #eae9e6;
 }
 
@@ -410,6 +417,14 @@ td.time {
 
 td.authors {
     width: 40%;
+}
+
+td.title {
+    width: 40%;
+}
+
+td.panel {
+    width: 50%;
 }
 
 td.title {
