@@ -4,11 +4,11 @@
  */
 
 :root {
-  --main-color: #b35642;
-  --main-table-color: #b3564230; /* adds some transparency*/
-  --accent-color: #528241;
-  --accent-table-color: #5282412e; /* adds some transparency*/
-  --grid-color: #eae9e6;
+  --main-color: #bd5319;
+  --main-table-color: #bd531930; /* adds some transparency*/
+  --accent-color: #5f712d;
+  --accent-table-color: #5f712d30; /* adds some transparency*/
+  --grid-color: #978d8580;
 }
 
 @font-face {
