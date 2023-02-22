@@ -484,6 +484,10 @@ tr.talk, tr.talkChairinfo {
     background-color: var(--accent-table-color);
 }
 
+tr.disc{
+	background-color: #00356b2e;
+}
+
 /* tr.talk td:first-child, tr.talkChairinfo td:first-child { */
 /*     border-left: 10px solid var(--main-color); */
 /* } */
