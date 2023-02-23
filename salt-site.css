@@ -124,6 +124,18 @@ ul[list-title] li {
 }
 
 
+
+aside {
+  width: 35%;
+  padding-left: 15px;
+  margin-left: 15px;
+  padding-right: 15px;
+  float: right;
+  font-style: none;
+  background-color: #00356b2e;
+}
+
+
 /* Main content
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
