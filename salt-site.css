@@ -108,14 +108,14 @@ ul[list-title] li {
 #location-div {
     width: 100%;
     text-align: center;
-    margin-top: 6px;
+    margin-top: 5px;
     font-style: normal;
 }
 
 #location {
     font-size: 17px;
     font-weight: 500;
-    line-height: 1.5em;
+    line-height: 1.2em;
 }
 
 #date {
