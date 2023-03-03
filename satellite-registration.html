@@ -31,26 +31,31 @@
 
   <div class="form-group row">
       <div class="input-group">
-        <input name="email" placeholder="email" type="text" class="form-control" width=100>
+        <input name="email" placeholder="email" type="text" class="form-control" width=100 required>
       </div>
   </div>
 
   <br>
   <div class="form-group row">
-	  <label for="neg" class="form-control"><input type="checkbox" id="neg" name="negation" value="registered" />
+	  <label for="neg" class="form-control"><input class="session" type="checkbox" id="neg" name="negation" value="registered" onclick='reLease("session")' />
 		  <font color="#a66524"> &emsp; diachronies of negation <span style="font-weight:normal">&mdash; <small>11 may am</small>&emsp;<a href="negation.html" target="_blank"><img style='vertical-align:middle;' src="neg-icon.png"></a></span></font>
 	  </label><br>  
 
-  <label for="def" class="form-control"><input type="checkbox" id="def" name="(in)definiteness" value="registered" />
+  <label for="def" class="form-control"><input type="checkbox" class="session" id="def" name="(in)definiteness" value="registered"  onclick='reLease("session")' />
 	  <font color="#500e80"> &emsp;  (in)definiteness &amp; genericity <span style="font-weight:normal">&mdash; <small>11 may pm</small> </span></font>
   </label><br>
 
-	    <label for="phil-ling" class="form-control"><input type="checkbox" id="phil" name="philosophy" value="registered" />
-		    <font color="#32a6a6">&emsp;philosophy of linguistics <span style="font-weight:normal">&mdash; <small>14/15 may</small>&emsp;<a id="phil-icon" href="https://philosophyoflinguistics.com/" target="_parent"><img id="phil-icon"; style='vertical-align:middle;' src="phil-icon.png"></a></span></font>
+	    <label for="phil-ling" class="form-control"><input type="checkbox" class="session" id="phil" name="philosophy" value="registered" onclick='reLease("acb")'  onclick='reLease("session")'/>
+		    <font color="#32a6a6">&emsp;philosophy of linguistics <span style="font-weight:normal">&mdash; <small>14/15 may</small>&emsp;<a id="phil-icon" href="https://philosophyoflinguistics.com/" target="_parent"><img id="phil-icon"; style='vertical-align:middle;' src="phil-icon.png" onclick='reLease("acb")'></a></span></font>
 	  </label><br>
 
 
   </div>
+
+  <div style="visibility:hidden; color:"#bd5319"; " id="chk_option_error">
+	  <i>	  please select at least one option if you'd like to register for the satellite workshops</i>
+  </div>
+
   <div class="form-group row">
     <div class="offset-4 col-8">
       <button class="button">register!</button>
