@@ -642,6 +642,12 @@ td.title {
     width: 40%;
 }
 
+td.venue {
+    width: 40%;
+    font-style: italic;
+
+}
+
 tr.admin {
     /* background-color: #C6C6C6; */
 }
@@ -731,14 +737,14 @@ tr.talkChairinfo td, tr.invitedChairinfo td, tr.posterChairinfo td {
     border-top: 10px solid white;
 }
 
-tr.posterInfoLightTwo, tr.posterInfoLightOne {
+tr.posterInfoA, tr.posterInfoB {
     background-color: var(--grid-color);
     /* background-color: #8FBAC8; */
     /* border-spacing: 0px; */
     /* display: none; */
 }
 
-tr.posterInfoLightTwo td, tr.posterInfoLightOne td {
+tr.posterInfoA td, tr.posterInfoB td {
     border-style: none;
 }
 
@@ -792,12 +798,12 @@ tr.hidden {
     display: none;
 }
 
-#lightTwoPosterArr, #lightOnePosterarr {
+#PosterArrA, #PosterArrB {
     width: 12px;
     display: inline-block;
 }
-#lightTwoPosterArr.collapsed:before, #lightOnePosterArr.collapsed:before {content: '▸ '; }
-#lightTwoPosterArr:not(.collapsed):before, #lightOnePosterArr:not(.collapsed):before {content: '▾ '; }
+#PosterArrA.collapsed:before, #PosterArrB.collapsed:before {content: '▸ '; }
+#PosterArrA:not(.collapsed):before, #PosterArrB:not(.collapsed):before {content: '▾ '; }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
