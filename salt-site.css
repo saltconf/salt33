@@ -239,6 +239,9 @@ aside {
 }
 
 
+#nav li.strike:hover {text-decoration:line-through}
+#nav ul li.strike:hover {text-decoration:line-through}
+
 #nav ul ul > :first-child {
     	padding-top:.6em;
 	border-top: none;
@@ -287,6 +290,7 @@ aside {
 #reg-button:active {
   box-shadow: inset 0 3px 4px hsla(0, 0%, 0%, 0.2);
 }
+
 
 
 
