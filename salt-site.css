@@ -6,17 +6,25 @@
 :root {
   --main-color: #bd5319;
   --main-table-color: #bd531930; /* adds some transparency*/
+  --main-table-session: #bd531970; /* adds less transparency*/
   --accent-color: #5f712d;
   --accent-table-color: #5f712d30; /* adds some transparency*/
-  --grid-color: #978d8580;
+  --accent-table-session: #5f712d70; /* adds less transparency*/
+  --grid-color: #978d8550;
+  --grid-session: #978d85; 
+  --fourth-color: #00356b90;
+  --fourth-table-color: #00356b30; /* adds some transparency*/
+  --fourth-table-session: #00356b70; /* adds less transparency*/
 }
 
+
 @font-face {
-    font-family: 'Avenir Book';
+    font-family: 'Avenir Book', 'Montserrat', sans-serif;
     src: url('fonts/Avenir-Book.eot');
     src: url('fonts/Avenir-Book.eot?#iefix') format('embedded-opentype'),
     url('fonts/Avenir-Book.woff') format('woff'),
     url('fonts/Avenir-Book.ttf') format('truetype');
+    src: url("https://fonts.googleapis.com/css?family=Montserrat") ;
     font-weight: normal;
     font-style: normal;
 }
@@ -31,7 +39,7 @@ html {
 body {
     margin: 8px 0px;
     width: 100%;
-    font-family: 'Avenir';
+    font-family: 'Avenir', 'Montserrat', sans-serif;
     /* font-family: 'Lato', sans-serif; */
     /* font-family: 'Open Sans', sans-serif; */
     font-style: normal;
@@ -203,6 +211,10 @@ aside {
 
 #nav {
     text-align: center;
+}
+
+.active {
+  background-color: #63aaff50;
 }
 
 #nav ul {
@@ -655,10 +667,16 @@ tr.break td, tr.lunch td, tr.party td, tr.breakShort {
     /* border-top: 10px solid var(--main-color); */
     /* border-bottom: 10px solid var(--main-color); */
 }
-tr.talk, tr.talkChairinfo {
+tr.talk{
     /* background-color: #C7D1C5; */
     /* note the 2e at the end indicates transparency */
     background-color: var(--accent-table-color);
+}
+
+tr.talkChairinfo{
+    /* background-color: #C7D1C5; */
+    /* note the 2e at the end indicates transparency */
+    background-color: var(--accent-table-session);
 }
 
 tr.disc{
@@ -679,20 +697,31 @@ tr.postertalk, tr.poster {
     height: 70px;
 }
 
-tr.posterChairinfo, tr.postertalk, tr.poster {
+tr.posterChairinfo {
+    background-color: var(--grid-session);
+}
+
+tr.postertalk, tr.poster {
     background-color: var(--grid-color);
 }
+
 
 tr.invited {
     height: 70px;
 }
 
-tr.invited, tr.invitedChairinfo {
+tr.invited {
     /* background-color: #B6B1A9; */
     /* note the 85 at the end indicates transparency */
     background-color: var(--main-table-color);
 }
 
+
+tr.invitedChairinfo {
+    /* background-color: #B6B1A9; */
+    /* note the 85 at the end indicates transparency */
+    background-color: var(--main-table-session);
+}
 tr.talkChairinfo, tr.invitedChairinfo, tr.posterChairinfo {
     text-align: center;
     font-weight: bold;
@@ -729,6 +758,29 @@ tr.posterInfoLightTwo td, tr.posterInfoLightOne td {
     /* border-bottom-style: dotted; */
     /* font-weight: 500; */
     line-height: 1.5em;
+}
+
+
+tr.invited {
+    height: 70px;
+}
+
+tr.partyInfo {
+    /* background-color: #B6B1A9; */
+    /* note the 85 at the end indicates transparency */
+    background-color: var(--fourth-table-session);
+     border-top: 10px solid white;
+      text-align: center;
+    font-weight: bold;
+
+}
+
+
+tr.event {
+    /* background-color: #B6B1A9; */
+    /* note the 85 at the end indicates transparency */
+    background-color: var(--fourth-table-color);
+    vertical-align:middle;
 }
 
 span.materials a {
@@ -772,3 +824,54 @@ tr.hidden {
   overflow: hidden;
   background-color: #f1f1f1;
 }
+
+
+/*TABBING */
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 0px solid #ccc;
+  background-color: var(--accent-table-session);
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: var(--fourth-color);
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing:.11rem;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 46px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: var(--accent-color);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: var(--main-color);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 8px 15px;
+  border: 1px solid #ccc;
+  border-top: none;
+  animation: fadeEffect 2s;
+}
+	
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
