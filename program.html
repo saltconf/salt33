@@ -208,6 +208,15 @@
   </script>
 
 
+  <script>
+// When the user clicks on <div>, open the popup
+function Pop() {
+  var popup = document.getElementById("map");
+  popup.classList.toggle("show");
+}
+</script>
+
+
 
 		<details><summary><tr class="posterChairinfo"><td colspan="3">poster session<font style="font-variant: small-caps"> a</font></td></tr>
                 <tr class="postertalk">
@@ -369,8 +378,13 @@
   <tr class="break">
                   <td class="time">5 &ndash; 6</td>
                   <td class="title" colspan="2">Break/transport to Marcel Hotel
-                    (<a style="font-weight: 400; color: #3284bf; text-decoration: none; border-bottom: 1px solid"
-                       href="">map here</a>)
+                   <!--- (<a style="font-weight: 400; color: #3284bf; text-decoration: none; border-bottom: 1px solid"
+			   href="">map here</a>) -->
+		   <div class="popup" onclick="Pop()"><span style="color#286dc0;border-bottom:1px"> [map here!]</span>
+  <span class="popuptext" id="map">
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d47960.9888524465!2d-72.9554971602192!3d41.29664040989213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e7d968e19ee825%3A0xbfcdd5071030ff08!2sHotel%20Marcel%20New%20Haven%2C%20Tapestry%20Collection%20by%20Hilton!5e0!3m2!1sen!2sus!4v1681679901906!5m2!1sen!2sus" width="400" height="300" style="border:1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></iframe>
+  </span>
+</div>
                   </td>
                 </tr>
 
@@ -471,7 +485,7 @@ document.getElementById("defaultOpen").click();
 	    <!--  posters -->
      
 <div id="posters" class="tabcontent">
-	<h2 id="posterlist"> all posters &mdash;  <button class="tablinks" onclick="openTab(event, 'Sat')" style="background-color: var(--fourth-color);
+	<hr>	<h2 id="posterlist"> all posters &mdash;  <button class="tablinks" onclick="openTab(event, 'Sat')" style="background-color: var(--fourth-color);
   font-variant: small-caps;
   font-weight: bold;
   font-size: .75em;
