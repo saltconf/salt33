@@ -102,7 +102,7 @@
 		    <tr class="lunch">
                   <td class="time">1 &ndash; 2.30</td>
                   <td class="title">Lunch</td>
-		  <td class="venue">(on your own!)<br><small><a href="local.html">local information</a></small></td>
+		  <td class="venue">(on your own!)<br><small><a href="local.html#eating">local information</a></small></td>
 
                 </tr>
 
@@ -342,7 +342,7 @@
                 <tr class="talk">
                   <td class="time">2.40 &ndash; 3.20</td>
                   <td class="title">Everyone except possibly Ann<a href="abstracts/abstract7.pdf"></a></td>
-                  <td class="authors">Clemens Mayr &amp; Ekaterina Vostrikova	</td>
+		  <td class="authors">Clemens Mayr<br>&emsp;&amp; Ekaterina Vostrikova	</td>
                 </tr>
 
 
@@ -394,6 +394,8 @@
 	    </table>
 		
 	    </div>
+
+	    <!-- sunday -->
 
 	       <div id="Sun" class="tabcontent">
             <h2 id="sunday">Sunday, May 14</h2>
@@ -466,9 +468,18 @@ document.getElementById("defaultOpen").click();
 </script>
 
   
+	    <!--  posters -->
      
 <div id="posters" class="tabcontent">
-    <h2 id="posterlist"> all posters &mdash; sat 13 May pm</h2>
+	<h2 id="posterlist"> all posters &mdash;  <button class="tablinks" onclick="openTab(event, 'Sat')" style="background-color: var(--fourth-color);
+  font-variant: small-caps;
+  font-weight: bold;
+  font-size: .75em;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 17px 22px;
+  transition: 0.3s;" >saturday afternoon</button></h2>
 	  <table class="program">
               <tbody>
 		      
