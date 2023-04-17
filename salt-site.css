@@ -670,6 +670,8 @@ tr.party {
 
 tr.break, tr.breakShort, tr.lunch, tr.party {
     /* background-color: #B2B2B2; */
+	vertical-align: middle;
+
 }
 
 tr.break td, tr.lunch td, tr.party td, tr.breakShort {
