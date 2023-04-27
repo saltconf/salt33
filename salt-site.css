@@ -652,8 +652,17 @@ td.venue {
 
 }
 
+tr.adminSession {
+     background-color: #00356b;
+     color: #f9f9f9; 
+     text-align: center;
+    font-weight: bold;
+
+}
+
 tr.admin {
-    /* background-color: #C6C6C6; */
+     background-color: #978d8540; 
+     text-align: center;
 }
 
 tr.break, tr.talk {
