@@ -107,14 +107,8 @@ actualBtn.addEventListener('change', function(){
 })
 
 </script>	
-
-
-
-
 	</head>
-
 <body>
-
  <div class="container" >
       <div class="row" >
         <div id="logo-div" >
@@ -135,9 +129,6 @@ actualBtn.addEventListener('change', function(){
 		 <div id="nav" class="three columns" >
 	<include src="./nav.html"></include>
 		 </div>
-
-
-
 <div id="regform" class="center">
 <form method="post" action="https://forms.un-static.com/forms/da3f8c6e9b324d95721f4e064a4fc75b5ec0c0cc"> <h3>materials upload</h3>
 
@@ -155,27 +146,25 @@ actualBtn.addEventListener('change', function(){
 
   <!--<label for="cars">uploading for session...</label>-->
   <select id="session" name="session" style="font-family:Avenir Book;width:50%;padding: 16px 22px;margin: 8px 0;box-sizing: border-box;border:none; border-radius: 10px; background-color: #00356b40;">
-    <option value="fri">1&ndash;3 (friday)</option>
+	<option value="none" selected disabled>session</option>
+	<option value="fri">1&ndash;3 (friday)</option>
     <option value="sat">4&ndash;7 (saturday)</option>
     <option value="posters">A/B (poster)</option>
     <option value="sun">8-9 (sunday)</option>
     <option value="invited">&alpha;&ndash;&epsilon; (invited)</option>
     <option value="workshop">satellite sessions</option>
   </select>
-  <br>
+  
 
-  <select id="type" name="type" style="font-family:Avenir Book;width:50%;padding: 16px 22px;margin: 8px 0;box-sizing: border-box;border:none; border-radius: 10px; background-color: #286dc040;">
-    <option value="handout">handout</option>
+  <select id="type" name="type" style="font-family:Avenir Book;width:50%;padding: 16px 20px;margin: 8px 0;box-sizing: border-box;border:none; border-radius: 10px; background-color: #286dc040;">
+    <option value="none" selected disabled>type</option>
+	  <option value="handout">handout</option>
     <option value="slides">slides</option>
     <option value="poster">poster</option>
     <option value="video">lightning talk</option>
     <option value="abstract">abstract</option>
   </select>
-  <br>
-
-
-
-<br>
+  
 <p style="width:50%"><small>upload a pdf, video or html document with the first author's surname as the filename &mdash; e.g. <tt>dayal.pdf</tt></small></p>
 <!-- actual upload which is hidden -->
 <input type="file" id="actual-btn" style="font-family:monospace;text-transform:lowercase;" >
