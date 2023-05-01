@@ -1,0 +1,172 @@
+<html>
+	<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+  <title>SALT 33</title>
+  <meta name="description" content="Semantics and Linguistic Theory 33">
+  <meta property="og:title" content="SALT 33" />
+  <meta property="og:url" content="https://saltconf.github.io/salt33" />
+  <meta property="og:description" content="SALT 33">
+  <meta property="og:image" content="salt33-logo1.png">
+  <meta property="og:type" content="website" />
+  <script src="js/include.js"></script>
+  <link rel="stylesheet" href="salt-site.css" type="text/css" media="screen" />
+  <link href="https://fonts.googleapis.com/css?family=Lato|Open+Sans" rel="stylesheet">
+
+<style>
+
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+$colors: (
+  slide-right: #e75480
+);
+
+  ::file-selector-button{
+    --color: #00346b;
+    --hover: #bd531950;
+}
+
+body{
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  background: lightblue;
+}
+form{
+  margin: auto;
+}
+
+::file-selector-button{
+  font-size: 1.25rem;
+  font-family: 'Avenir Book';
+  border: none;
+  background: white;
+  border: 1px solid #00356b;
+  text-transform: lowercase;
+  color: #00356b;
+  transition: 1.3s;
+  padding: 1rem 1.5rem;
+  &:hover,
+  &:focus { 
+    border-color: #e75480;
+    color: white;
+  }
+  font-size: 1rem; 
+  width: 33%;
+  height: 4rem;
+  border-radius: 2rem;
+}
+  
+
+/*
+label{
+  display: inline-block;
+  background-color: #63aaff;
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 50%;
+   border: 1px solid #00356b;
+  color: #00356b;
+  transition: 1.3s;
+  padding: 1rem 1.5rem;
+  &:hover,
+  &:focus { 
+    border-color: #e75480;
+    background-color: white;
+  }
+  font-size: 1rem; 
+  height: 4rem;
+  border-radius: 2rem;
+
+*/
+   ::file-selector-button:hover,
+::file-selector-button:focus {
+  box-shadow: inset 15rem 0 0 0 #bd531950;
+
+#file-chosen{
+  margin-left: 0.3rem;
+  font-family: sans-serif;
+}
+
+}
+
+</style>
+
+<script>
+
+const actualBtn = document.getElementById('actual-btn');
+
+const fileChosen = document.getElementById('file-chosen');
+
+actualBtn.addEventListener('change', function(){
+  fileChosen.textContent = this.files[0].name
+})
+
+</script>	
+
+
+
+
+	</head>
+
+<body>
+<div id="regform" class="center">
+<form method="post" action="https://forms.un-static.com/forms/da3f8c6e9b324d95721f4e064a4fc75b5ec0c0cc"> <h3>materials upload</h3>
+
+  <div class="form-group row">
+      <div class="input-group">
+        <input name="name" placeholder="name" type="text" class="form-control" size="90" required>
+      </div>
+  </div>
+
+  <div class="form-group row">
+      <div class="input-group">
+        <input name="email" placeholder="email" type="text" class="form-control" width=100 required>
+      </div>
+  </div>
+
+  <!--<label for="cars">uploading for session...</label>-->
+  <select id="cars" name="cars" style="font-family:Avenir Book;width:50%;padding: 16px 22px;margin: 8px 0;box-sizing: border-box;border:none; border-radius: 10px; background-color: #00356b40;">
+    <option value="fri">1&ndash;3 (friday)</option>
+    <option value="sat">4&ndash;7 (saturday)</option>
+    <option value="posters">A/B (poster)</option>
+    <option value="sun">8-9 (sunday)</option>
+    <option value="invited">&alpha;&ndash;&epsilon; (invited)</option>
+    <option value="workshop">satellite sessions</option>
+  </select>
+  <br>
+
+
+
+<br>
+<p style="width:50%"><small>upload a pdf or html document with the first author's surname as the filename &mdash; e.g. <tt>dayal.pdf</tt></small></p>
+<!-- actual upload which is hidden -->
+<input type="file" id="actual-btn" style="font-family:monospace;text-transform:lowercase;" >
+
+<!-- our custom upload button 
+<label for="actual-btn">Choose File</label>-->
+
+<!-- name of file chosen
+<span id="file-chosen">No file chosen</span>
+-->
+<br><br>
+
+ <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button class="button">submit!</button>
+    </div>
+  </div>
+  <div class="text-center">
+    <p><small>&mdash; powered by <a rel="nofollow" href="Un-static Forms">un-static Forms</a></small></p>
+  </div>
+
+
+ </form>
+</div>
+</body>
+</html>
