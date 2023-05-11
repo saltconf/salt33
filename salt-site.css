@@ -808,6 +808,9 @@ tr.event {
     vertical-align:middle;
 }
 
+
+
+
 span.materials {
     color: var(--grid-session);
     font-size: .8em;
@@ -819,6 +822,18 @@ span.materials {
 span.materials a {
     color: var(--fourth-color);
 }
+
+a.material {
+    color: var(--grid-session);
+    font-size: .8em;
+    font-family: monospace;
+    text-align: right;
+    font-weight: 600;
+}
+a.material::before {content: "[ "}
+a.material::after {content: " ]"}
+
+
 /* .program a:focus, .program a:hover {color:#820000; background-image:none} */
 
 tr.hidden {
