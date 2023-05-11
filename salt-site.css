@@ -811,6 +811,8 @@ tr.event {
 span.materials a {
     color: var(--accent-color);
     font-size: .8em;
+    font-family: monospace;
+    text-align: right;
 }
 /* .program a:focus, .program a:hover {color:#820000; background-image:none} */
 
