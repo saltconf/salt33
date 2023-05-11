@@ -810,6 +810,7 @@ tr.event {
 
 span.materials a {
     color: var(--accent-color);
+    font-size: .8em;
 }
 /* .program a:focus, .program a:hover {color:#820000; background-image:none} */
 
