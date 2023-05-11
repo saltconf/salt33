@@ -808,12 +808,16 @@ tr.event {
     vertical-align:middle;
 }
 
-span.materials a {
-    color: var(--fourth-color);
+span.materials {
+    color: var(--grid-session);
     font-size: .8em;
     font-family: monospace;
     text-align: right;
     font-weight: 600;
+}
+
+span.materials a {
+    color: var(--fourth-color);
 }
 /* .program a:focus, .program a:hover {color:#820000; background-image:none} */
 
