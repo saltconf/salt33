@@ -824,14 +824,25 @@ span.materials a {
 }
 
 a.material {
-    color: var(--grid-session);
+    color: var(--fourth-color);
     font-size: .8em;
     font-family: monospace;
     text-align: right;
     font-weight: 600;
+    text-decoration:none;
+    border-bottom: none;
 }
-a.material::before {content: "[ "}
-a.material::after {content: " ]"}
+a.material:visited{color: #00356b);}
+a.material:hover{text-decoration: underline;}
+
+a.material::before {content: "\a[\200A";
+	 color: var(--grid-session);
+	 text-decoration: none;
+white-space: pre;}
+a.material::after {content: "\200A]";
+	 text-decoration: none;	
+ color: var(--grid-session);
+}
 
 
 /* .program a:focus, .program a:hover {color:#820000; background-image:none} */
