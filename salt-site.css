@@ -921,6 +921,8 @@ tr.hidden {
   background-color: var(--main-color);
 }
 
+.strike:hover {text-decoration:line-through}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
